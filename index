@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Covidaware Specifications</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel = "stylesheet" href = "specs_Styles.css">
+</head>
+
+<body>
+	<div class = "header">
+		<H1>Covidaware Specifications</H1>
+	</div>
+	<div class = "proposal">
+		<div class = "what">
+			<div class = "header2">
+				<h2>What We Want To Do?</h2>
+			</div>
+			<div class = "proposal-body">
+			
+			</div>
+		</div>
+		
+		<div class = "purpose">
+			<div class = "header2">
+				<h2>What Is The Purpose?</h2>
+			</div>
+			<div class = "proposal-body">
+			
+			</div>
+		</div>
+		
+		<div class = "audience">
+			<div class = "header2">
+				<h2>Who Is The Audience?</h2>
+			</div>
+			<div class = "proposal-body">
+			
+			</div>
+		</div>
+		
+		<div class = "benefits">
+			<div class = "header2">
+				<h2>What Are The Benefits To The Audience?</h2>
+			</div>
+			<div class = "proposal-body">
+			
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class = "footer">
+		<div class = "cp">
+            <p>&copy; Covid Aware</p>
+        </div>
+	</div>
+</body>
+</html>
