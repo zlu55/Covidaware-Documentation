@@ -1,5 +1,18 @@
 body{
-	background-color: #C0F7FF;
+	background-color: #EAEFEF;	/*#C0F7FF*/
+	margin: 0px;
+}
+
+.pageContainer{
+	position: relative;
+	min-height: 100%;
+}
+
+.main{
+	padding-left: 50px;
+	padding-right: 15px;
+	padding-bottom: 75px;
+	display: flex;
 }
 
 .header{
@@ -7,15 +20,48 @@ body{
 	font-size: 20px;
 }
 
-.header2{
+.tableOfContents{
+	position: fixed;
+	background-color: white;
+	padding: 15px;
+	margin-left: 83%;
+	max-width: 200px;
+	border: solid 1px gray;
+}
+
+.ToCMainHeader{
+	margin-top: -15px;
+	margin-bottom: -10px;
+}
+
+.ToCHeader{
 	text-decoration: underline;
 	font-weight: bold;
 }
 
+.subheaders{
+	margin-left: 30px;
+	margin-top: -15px;
+}
+
+.subheader{
+	margin-bottom: -15px;
+}
+
+.topics{
+	margin-top: 50px;
+	max-width: 85%;
+	min-width: 85%;
+}
+
+.subtopic{
+	margin-left: 30px;
+}
+
 .footer{
-	position: fixed;
-    left: 0;
+	position: absolute;
     bottom: 0;
+	height: 75px;
     width: 100%;
     color: white;
     background-color: black;
