@@ -24,8 +24,8 @@ body{
 	position: fixed;
 	background-color: white;
 	padding: 15px;
-	margin-left: 83%;
-	max-width: 200px;
+	margin-left: 80%;
+	max-width: 250px;
 	border: solid 1px gray;
 }
 
@@ -50,11 +50,11 @@ body{
 
 .topics{
 	margin-top: 50px;
-	max-width: 85%;
-	min-width: 85%;
+	max-width: 80%;
+	min-width: 80%;
 }
 
-.subtopic{
+.subtopic, .topicBody{
 	margin-left: 30px;
 }
 
