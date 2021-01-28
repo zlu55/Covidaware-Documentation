@@ -21,7 +21,7 @@ body{
 }
 
 .tableOfContents{
-	position: fixed;
+	position: absolute;
 	background-color: white;
 	padding: 15px;
 	margin-left: 80%;
