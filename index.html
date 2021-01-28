@@ -93,22 +93,22 @@
 					<div class = "subheaders">
 						<div class = "subheader">
 							<a href = "#3.1">
-								<h5>3.1 External Interfaces</h5>
+								<h5>3.1 Functional Requirements</h5>
 							</a>
 						</div>
 						<div class = "subheader">
 							<a href = "#3.2">
-								<h5>3.2 Functional Requirements</h5>
+								<h5>3.2 Performance Requirements</h5>
 							</a>
 						</div>
 						<div class = "subheader">
 							<a href = "#3.3">
-								<h5>3.3 Performance Requirements</h5>
+								<h5>3.3 Logical Database Requirements</h5>
 							</a>
 						</div>
 						<div class = "subheader">
 							<a href = "#3.4">
-								<h5>3.4 Logical Database Requirements</h5>
+								<h5>3.4 Design Constraints</h5>
 							</a>
 						</div>
 						<div class = "subheader">
@@ -152,7 +152,12 @@
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p>--Insert Info Here--</p>
+							<p>	Since the beginning of COVID-19 information and statistics has been scattered across the internet. Resulting in a need for a website that 
+								simply displays information about COVID-19 in a user friendly manner.<br><br>
+								This document outlines the proposed COVIDaware website. This document will outline the goals of our project, as well as outline the requirements 
+								we are trying to fulfil. This document outlines all features of our project, plans for interfaces, and design. This document is intended to be 
+								helpful to both users and developers.
+							</p>
 						</div>
 					</div>
 					<div class = "subtopic">
@@ -162,7 +167,10 @@
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p>--Insert Info Here--</p>
+							<p>	The software product will be a user friendly website called COVIDaware. COVIDaware will be an intuitive method for accessing all information 
+								regarding COVID-19, in a user-friendly format. This website will not just display statistics, but will also be complemented with corresponding 
+								visual aids. The objective of COVIDaware is to create an all inclusive tool to help users develop a deeper understanding of COVID-19 data.
+							</p>
 						</div>
 					</div>
 					<div class = "subtopic">
@@ -172,7 +180,12 @@
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p>--Insert Info Here--</p>
+							<p>	GUI - Graphical User Interface, which will be the interface the user interacts with.<br>
+								API - Application Programming Interface<br>
+								COVID-19 - CO refers to Corona, VI refers to virus, D refer to disease, and 19 refers to the year the virus was found(2019)<br>
+								Coronaviruses - refers to a large group of viruses, but under the context of COVIDaware, will be used to refer to COVID-19<br>
+								Heat Map - represents data using colour on a map.<br>
+							</p>
 						</div>
 					</div>
 					<div class = "subtopic">
@@ -182,7 +195,9 @@
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p>--Insert Info Here--</p>
+							<p>	This document refers to the standards mentioned in the IEEE Std 830-1998<br><br>
+								IEEE recommended practice for software requirements specifications. (1998). New York: IEEE.
+							</p>
 						</div>
 					</div>
 					<div class = "subtopic">
@@ -192,7 +207,9 @@
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p>--Insert Info Here--</p>
+							<p>	The remaining portion of the document describes various features of COVIDaware, functionality of the website, the audience, 
+								and various requirements that are being fulfilled.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -209,7 +226,10 @@
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p>--Insert Info Here--</p>
+							<p>	COVIDaware is based on data from publicly available databases within Canada. Major components include SQL to store COVID data 
+								on a server using python or javascript to manipulate the data in a visually pleasant format for users. In addition, HTML and CSS
+								will be used to create the web application.
+							</p>
 						</div>
 					</div>
 					<div class = "subtopic">
@@ -219,7 +239,14 @@
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p>--Insert Info Here--</p>
+							<ul>
+								<li>Provide up to date data on COVID cases in Canada</li>
+								<li>Display heat maps indicating areas with a large amount of COVID cases</li>
+								<li>Display graphs to show the amount of cases and vaccinations throughout Canada</li>
+								<li>Display statistics specific to each province</li>
+								<li>Display a list of frequently asked questions based on province</li>
+								<li>Users can input postal code and get COVID information related to that area</li>
+							</ul>
 						</div>
 					</div>
 					<div class = "subtopic">
@@ -229,7 +256,9 @@
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p>--Insert Info Here--</p>
+							<p>	Our audience is intended for everyone in Canada who is concerned about the hotspots, possible areas of infection or what to do if 
+								covid-like symptoms occur. We want to provide this audience with up-to-date information about covid-19.
+							</p>
 						</div>
 					</div>
 					<div class = "subtopic">
@@ -239,7 +268,10 @@
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p>--Insert Info Here--</p>
+							<p>	There is no cost constraint for COVIDaware as it uses free software to implement the Web App. The project does have development constraints of 
+								time and reliability. The time constraint is that the project must be finished by the end of the Semester, April 12th. The reliability constraint 
+								is that the CovidWare Website doesn't refresh every time data has been updated in the Canada Covid database.
+							</p>
 						</div>
 					</div>
 					<div class = "subtopic">
@@ -249,7 +281,12 @@
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p>--Insert Info Here--</p>
+							<p>Requires the user to  to have an internet connection. Covidaware assumes that (
+								<a href = "https://health-infobase.canada.ca/covid-19/epidemiological-summary-covid-19-cases.htm"> 
+									https://health-infobase.canada.ca/covid-19/epidemiological-summary-covid-19-cases.htm
+								</a>
+								), will be accurate and up-to-date. It is also assumed that the user has a device that is web accessible and is compatible with Google Maps API.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -262,41 +299,58 @@
 					<div class = "subtopic">
 						<div class = "subtopicHeader">
 							<a id = "3.1">
-								<h4>3.1 External Interfaces</h4>
+								<h4>3.1 Functional Requirements</h4>
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p>--Insert Info Here--</p>
+							<ul>
+								<li>The system will check the user’s postal code inputs for basic validity such that they follow Canadian standards</li>
+								<ul>
+									<li>Invalid inputs will be met with an error message</li>
+								</ul>
+								<li>Database errors will be handled using a basic error message</li>
+								<li>Inputs will be processed using third party mapping</li>
+							</ul>
 						</div>
 					</div>
 					<div class = "subtopic">
 						<div class = "subtopicHeader">
 							<a id = "3.2">
-								<h4>3.2 Functional Requirements</h4>
+								<h4>3.2 Performance Requirements</h4>
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p>--Insert Info Here--</p>
+							<ul>
+								<li>Running computer and access to the internet</li>
+							</ul>
 						</div>
 					</div>
 					<div class = "subtopic">
 						<div class = "subtopicHeader">
 							<a id = "3.3">
-								<h4>3.3 Performance Requirements</h4>
+								<h4>3.3 Logical Database Requirements</h4>
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p>--Insert Info Here--</p>
+							<ul>
+								<li>Provincial data will be stored and accessed from our database</li>
+							</ul>
 						</div>
 					</div>
 					<div class = "subtopic">
 						<div class = "subtopicHeader">
 							<a id = "3.4">
-								<h4>3.4 Logical Database Requirements</h4>
+								<h4>3.4 Design Constraints</h4>
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p>--Insert Info Here--</p>
+							<ul>
+								<li>Our software will be built into a webpage and will have all constraints associated as listed in section 2.4</li>
+								<ul>
+									<li>This includes poor mobile compatibility</li>
+								</ul>
+								<li>Our software is not-for-profit</li>
+							</ul>
 						</div>
 					</div>
 					<div class = "subtopic">
@@ -306,7 +360,9 @@
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p>--Insert Info Here--</p>
+							<ul>
+								<li>Users will be able to input postal code information to access information about location. This will be discarded after use (not stored).</li>
+							</ul>
 						</div>
 					</div>
 				</div>
