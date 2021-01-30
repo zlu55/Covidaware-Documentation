@@ -39,12 +39,12 @@ body{
 	font-weight: bold;
 }
 
-.subheaders{
+.subheaders, .subheaders2{
 	margin-left: 30px;
 	margin-top: -15px;
 }
 
-.subheader{
+.subheader, .subheader2{
 	margin-bottom: -15px;
 }
 
@@ -54,7 +54,7 @@ body{
 	min-width: 80%;
 }
 
-.subtopic, .topicBody{
+.subtopic, .topicBody, .subtopic2, .subtopicBody2{
 	margin-left: 30px;
 }
 
