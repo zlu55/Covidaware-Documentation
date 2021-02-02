@@ -58,6 +58,21 @@ body{
 	margin-left: 30px;
 }
 
+table{
+    color: Black;
+}
+
+th{
+	background-color: #BCB9B9;
+}
+table, th, td{
+    border: 1px solid Black;
+}
+
+th, td{
+    padding: 10px;
+}
+
 .footer{
 	position: absolute;
     bottom: 0;
