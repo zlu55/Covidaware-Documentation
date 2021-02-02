@@ -90,6 +90,12 @@ th, td{
 
 
 /*Main Page Styles*/
+.mainIndex{
+	padding-left: 50px;
+	padding-right: 15px;
+	padding-bottom: 75px;
+	min-height: 835px;
+}
 
 .documentationHeader{
 	text-align: left;
