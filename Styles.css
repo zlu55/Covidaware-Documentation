@@ -86,7 +86,12 @@ th, td{
     padding-right: 15px;
 }
 
-
+/*Requirements Styles*/
+.GUIBox{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr;
+}
 
 
 /*Main Page Styles*/
