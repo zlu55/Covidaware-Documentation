@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>COVIDaware SRS</title>
+	<title>COVIDaware Requirements</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<link rel = "stylesheet" href = "Styles.css">
 </head>
@@ -9,7 +9,7 @@
 <body>
 	<div class = "pageContainer">
 		<div class = "header">
-			<h1>COVIDaware SRS</h1>
+			<h1>COVIDaware Requirements</h1>
 		</div>
 		<div class = "main">
 			<div class = "tableOfContents">
@@ -306,7 +306,7 @@
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p>	COVIDaware is based on data from publicly available databases within Canada. The major components of this project include SQL to store COVID data 
+							<p>	COVIDaware is based on data from publicly available databases within Canada. The major components of this project include SQL to store COVID-19 data 
 								in a database. It will be using python or javascript to manipulate the data to display it in a visually pleasant format for users. In addition, HTML and CSS
 								will be used to create the web application.
 							</p>
@@ -368,8 +368,8 @@
 						</div>
 						<div class = "subtopicBody">
 							<ul>
-								<li>Provide up to date information on COVID cases in Canada</li>
-								<li>Display heat maps indicating areas with a large amount of COVID cases</li>
+								<li>Provide up to date information on COVID-19 cases in Canada</li>
+								<li>Display heat maps indicating areas with a large amount of COVID-19 cases</li>
 								<li>Display graphs to show the amount of cases and vaccinations throughout Canada</li>
 								<li>Display statistics specific to each province</li>
 								<li>Display a list of frequently asked questions based on province</li>
@@ -397,7 +397,7 @@
 						<div class = "subtopicBody">
 							<p>	There is no cost constraint for COVIDaware as it uses free software to implement the Web App. The project does have development constraints of 
 								time and reliability. The time constraint is that the project must be finished by the end of the current semester, April 12<sup>th</sup>, 2021. The reliability constraint 
-								is that the COVIDaware Website doesn't refresh every time data has been updated in the Canada COVID database.
+								is that the COVIDaware Website doesn't refresh every time data has been updated in the Canada COVID-19 database.
 							</p>
 						</div>
 					</div>
@@ -423,8 +423,88 @@
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p>--Insert Info Here--
-							</p>
+							<div class = "GUIBox">
+								<div class = "GUIItem">
+									<p>
+										<img src =  "images\UML1.png", alt = "UML 1" style = "width: 500px;"><br>
+									</p>
+								</div>
+								<div class = "GUIItem">
+									<p>
+										<img src =  "images\UML2.png", alt = "Province stats page sample GUI" style = "width: 500px;" height = "428"><br>
+									</p>
+								</div>
+							</div>
+							<ul>
+							<li>System</li>
+								<ul>
+									<li>	Access Source Databases: Involves accessing databases 
+										provided by database sources to use for our heat maps and graphs.
+									</li>
+									
+									<li>	Update Data: Involves the updating of all site databases for the visual components of the website.
+									</li>
+
+									<li>	Update Graphs: Involves the updating of visual aspects within the graphs.
+									</li>
+
+									<li>	Update Heatmap: Involves the updating of visual aspects within our heat maps.
+									</li>
+
+									<li>	Embed Timeline: Involves the display of the specific chosen Twitter timeline on the website.
+									</li>
+								</ul>
+
+							<li>Source Database</li>
+								<ul>
+									<li>	Update Source Databases: Involves the source of our accessed data 
+										maintaining said database and keeping it up to date.
+									</li>
+								</ul>
+
+							<li>Twitter</li>
+								<ul>
+									<li>	Maintaining Timeline: Involves displaying latest COVID-19 tweets via maintaining their own servers.
+									</li>
+								</ul>
+							
+							<li>User</li>
+								<ul>
+									<li>	Access Hyperlinks: Involves selecting a hyperlink and opening a 
+										new browser tab to access the selected website.
+									</li>
+									
+									<li>	Access FAQ Page: Involves the user accessing the FAQ page on the website 
+										holding static questions/answers about the website.
+									</li>
+
+									<li>	Access About Page: Involves accessing the page that provides information about the site.
+									</li>
+
+									<li>	Access COVIDaware Team Page:Involves accessing the team page where all members are listed.
+									</li>
+
+									<li>	Access Home Page: Involves accessing the home page in 
+										which you will be able to access the general heatmap along with additional graphs and information.
+									</li>
+
+									<li>	Change View: Involves clicking on the “Province” button on the home page and selecting a view.
+									</li>
+
+									<li>	Navigate Pages: Involves clicking on one of the page buttons or 
+										using the search bar to change the page directory on the website.
+									</li>
+
+									<li>	Searching: Involves entering a search query into the search bar and 
+										changing the page directory on the website.
+									</li>
+
+									<li>	Change Colourblind Settings: Involves selecting a certain colour 
+										palette which is best visually accessible by the user.
+									</li>
+								</ul>
+							
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -511,7 +591,7 @@
 								</a>
 							</div>
 							<div class = "subtopicBody2">
-								<p>Developers must have access to the GitHub repository to create, edit and delete pages.</p>
+								<p>Developers must have access to the <it>GitHub</it> repository to create, edit and delete pages.</p>
 							</div>
 							<div class = "subtopicHeader2">
 								<a id = "3.4.3">
@@ -589,7 +669,7 @@
 						<div class = "subtopicBody">
 							<ul>
 								<li>The reliability of the software depends on <i>Github</i> being operational at the time of delivery and going forward</li>
-								<li>The software will also depend on the the publicly accessable COVID database to ensure data integrity and reliability</li>
+								<li>The software will also depend on the the publicly accessable COVID-19 database to ensure data integrity and reliability</li>
 							</ul>
 						</div>
 					</div>
