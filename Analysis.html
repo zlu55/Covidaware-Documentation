@@ -52,11 +52,6 @@
 								<h5>2.2 Boundry Objects</h5>
 							</a>
 						</div>
-						<div class = "subheader">
-							<a href = "#2.3">
-								<h5>2.3 Control Objects</h5>
-							</a>
-						</div>
 					</div>
 				</div>
 				<div class = "ToCTopic">
@@ -68,12 +63,17 @@
 					<div class = "subheaders">
 						<div class = "subheader">
 							<a href = "#3.1">
-								<h5>3.1 Boundary/Control/Entity Diagram</h5>
+								<h5>3.1 Class Associations</h5>
 							</a>
 						</div>
 						<div class = "subheader">
 							<a href = "#3.2">
-								<h5>3.2 State Diagram</h5>
+								<h5>3.2 Class Attributes</h5>
+							</a>
+						</div>
+						<div class = "subheader">
+							<a href = "#3.3">
+								<h5>3.3 Class Diagram</h5>
 							</a>
 						</div>
 					</div>
@@ -262,16 +262,6 @@
 							</ul>
 						</div>
 					</div>
-					<div class = "subtopic">
-						<div class = "subtopicHeader">
-							<a id = "2.3">
-								<h4>2.3 Control Objects</h4>
-							</a>
-						</div>
-						<div class = "subtopicBody">
-							<p>	--Insert Text--</p>
-						</div>
-					</div>
 				</div>
 				<div class = "topic">
 					<div class = "topicHeader">
@@ -282,24 +272,46 @@
 					<div class = "subtopic">
 						<div class = "subtopicHeader">
 							<a id = "3.1">
-								<h4>3.1 Boundry/Control/Entity Diagram</h4>
+								<h4>3.1 Class Associations</h4>
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p> --Insert Text-- </p>
+							<ul>
+								<li>extractData &rarr; (submit, 1..M) BuildServer</li>
+								<li>BuildServer &rarr; (builds, 1..M) DataPage</li>
+								<li>DropDownMenu &rarr; (aggregates, 1..M) extractData</li>
+							</ul>
 						</div>
 					</div>
 					<div class = "subtopic">
 						<div class = "subtopicHeader">
 							<a id = "3.2">
-								<h4>3.2 State Diagram</h4>
+								<h4>3.2 Class Attributes</h4>
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p> --Insert Text--</p>
+							<ul>
+								<li>extractData: province(int)</li>
+								<li>BuildServer: d(source Database)</li>
+								<li>DropDownMenu: No attributes</li>
+								<li>source Database: CovidData(int)</li>
+								<li>DataPage: No attributes</li>
+								<li>User: No attributes</li>
+							</ul>
+						</div>
+					</div>
+					<div class = "subtopic">
+						<div class = "subtopicHeader">
+							<a id = "3.3">
+								<h4>3.3 Class Diagram</h4>
+							</a>
+						</div>
+						<div class = "subtopicBody">
+							<img src =  "images\classDiagram.png", alt = "Class diagram" style = "width: 500px;">
 						</div>
 					</div>
 				</div>
+				
 			</div>
 		</div>
 		<div class = "footer">
