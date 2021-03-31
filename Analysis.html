@@ -78,6 +78,21 @@
 						</div>
 					</div>
 				</div>
+                <div class = "ToCTopic">
+					<div class = "ToCHeader">
+						<a href = "#4">
+							<h5>4. Appendices</h5>
+						</a>
+					</div>
+                </div>
+                <div class = "ToCTopic">
+					<div class = "ToCHeader">
+						<a href = "#5">
+							<h5>5. Versions</h5>
+						</a>
+					</div>
+                </div>
+                
 			</div>
 
 			<div class = "topics">
@@ -121,71 +136,11 @@
 					</div>
 					<div class = "subtopic">
 						<div class = "topicBody">
-							<table cellspacing = '0'>
-								<thead>
-									<tr>
-										<th colspan = "2">Appendix A</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>User</td>
-										<td>A visitor to the COVIDaware website</td>
-									</tr>
-									<tr>
-										<td>TeamView</td>
-										<td>The page where a user views members of the development team</td>
-									</tr>
-									<tr>
-										<td>NavTools</td>
-										<td>The tools in which a user selects between other views</td>
-									</tr>
-									<tr>
-										<td>HomeView</td>
-										<td>The page where a user views data representation Canada wide</td>
-									</tr>
-									<tr>
-										<td>FAQView</td>
-										<td>The page where a user views Frequently Asked Questions</td>
-									</tr>
-									<tr>
-										<td>AboutView</td>
-										<td>The page where a user views information about COVIDaware</td>
-									</tr>
-									<tr>
-										<td>ProvinceDropdown</td>
-										<td>Allows user to switch between various provincial representations of the data</td>
-									</tr>
-									<tr>
-										<td>Graphs</td>
-										<td>A visual representation of data processed from the database</td>
-									</tr>
-									<tr>
-										<td>Heatmap</td>
-										<td>A visual representation of data processed from the database</td>
-									</tr>
-									<tr>
-										<td>TwitterFeed</td>
-										<td>Where a user views the active Twitter News</td>
-									</tr>
-									<tr>
-										<td>AboutContent</td>
-										<td>Text that describes the purpose and goal of COVIDaware</td>
-									</tr>
-									<tr>
-										<td>TeamContent</td>
-										<td>Text that displays all team members</td>
-									</tr>
-									<tr>
-										<td>FAQContent</td>
-										<td>Text that displays all Frequently Asked Questions</td>
-									</tr>
-								</tbody>
-							</table>
+							
 						</div>
 						<div class = "subtopicHeader">
 							<a id = "2.1">
-								<h4>2.1 Entity Objects (For information regarding attributes, please refer to Appendix A)</h4>
+								<h4>2.1 Entity Objects <a href = "#4">(For information regarding attributes, please refer to Appendix A)</a></h4>
 							</a>
 						</div>
 						<div class = "subtopicBody">
@@ -197,7 +152,7 @@
 					<div class = "subtopic">
 						<div class = "subtopicHeader">
 							<a id = "2.2">
-								<h4>2.2 Boundary Objects (For information regarding attributes, please refer to Appendix A)</h4>
+								<h4>2.2 Boundary Objects <a href = "#4">(For information regarding attributes, please refer to Appendix A)</a></h4>
 							</a>
 						</div>
 						<div class = "subtopicBody">
@@ -209,7 +164,7 @@
 										<li>HomeView</li>
 										<li>NavTools</li>
 										<li>TeamView</li>
-										<li>FAQView</li>
+										<li>faqView</li>
 										<li>AboutView</li>
 										<li>ProvinceDropdown</li>
 										<li>Graphs</li>
@@ -224,7 +179,7 @@
 										<li>HomeView</li>
 										<li>NavTools</li>
 										<li>TeamView</li>
-										<li>FAQView</li>
+										<li>faqView</li>
 										<li>AboutView</li>
 										<li>TwitterFeed</li>
 										<li>AboutContent</li>
@@ -237,10 +192,10 @@
 										<li>HomeView</li>
 										<li>NavTools</li>
 										<li>TeamView</li>
-										<li>FAQView</li>
+										<li>faqView</li>
 										<li>AboutView</li>
 										<li>TwitterFeed</li>
-										<li>FAQContent</li>
+										<li>faqContent</li>
 									</ul>
 								</li>
 								<li>TeamView<br><br>
@@ -250,7 +205,7 @@
 										<li>HomeView</li>
 										<li>NavTools</li>
 										<li>TeamView</li>
-										<li>FAQView</li>
+										<li>faqView</li>
 										<li>AboutView</li>
 										<li>TwitterFeed</li>
 										<li>TeamContent</li>
@@ -260,6 +215,17 @@
 						</div>
 					</div>
 				</div>
+                <div class = "subtopicHeader">
+                    <a id = "2.3">
+                        <h4>2.3 Control Objects </h4>
+                    </a>
+                </div>
+                <div class = "subtopicBody">
+                    <ul>
+                        <li>Database Connection Interface - Coordinates all data to form graphs, maps and statistics</li>
+                        <li>User Controller - Coordinates any action from the user to the UI</li>
+                    </ul>
+                </div>
 				<div class = "topic">
 					<div class = "topicHeader">
 						<a id = "3">
@@ -274,9 +240,8 @@
 						</div>
 						<div class = "subtopicBody">
 							<ul>
-								<li>extractData &rarr; (submit, 1..M) BuildServer</li>
-								<li>BuildServer &rarr; (builds, 1..M) DataPage</li>
-								<li>DropDownMenu &rarr; (aggregates, 1..M) extractData</li>
+								<li>processData &rarr; (submit, 1..M) displayData</li>
+								<li>pageListener &rarr; (builds, 1..M) staticPage</li>
 							</ul>
 						</div>
 					</div>
@@ -288,12 +253,12 @@
 						</div>
 						<div class = "subtopicBody">
 							<ul>
-								<li>extractData: province(int)</li>
-								<li>BuildServer: d(source Database)</li>
-								<li>DropDownMenu: No attributes</li>
-								<li>source Database: CovidData(int)</li>
-								<li>DataPage: No attributes</li>
-								<li>User: No attributes</li>
+								<li>staticPage: No attributes</li>
+								<li>startPage: No attributes</li>
+								<li>pageListener: No attributes</li>
+								<li>userSearch: inputKeyword(string)</li>
+								<li>displayData: canadaData(JSONFile), provinceCode(enumerated type)</li>
+								<li>processDat: canadaData(csvFiles)</li>
 							</ul>
 						</div>
 					</div>
@@ -304,12 +269,160 @@
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<img src =  "images\classDiagram.png", alt = "Class diagram" style = "width: 1000px;">
+							<img src =  "images\designUML1.png", alt = "Class diagram" style = "width: 1000px;">
 						</div>
 					</div>
 				</div>
-				
+                <div class = "topic">
+                    <div class = "topicHeader">
+						<a id = "4">
+							<h2>4. Appendices</h2>
+						</a>
+					</div>
+                    <div class = "topicBody">
+                        <table cellspacing = '0'>
+                            <thead>
+                                <tr>
+                                    <th colspan = "2">Appendix A</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>User</td>
+                                    <td>A visitor to the COVIDaware website</td>
+                                </tr>
+                                <tr>
+                                    <td>TeamView</td>
+                                    <td>The page where a user views members of the development team</td>
+                                </tr>
+                                <tr>
+                                    <td>NavTools</td>
+                                    <td>The tools in which a user selects between other views</td>
+                                </tr>
+                                <tr>
+                                    <td>HomeView</td>
+                                    <td>The page where a user views data representation Canada wide</td>
+                                </tr>
+                                <tr>
+                                    <td>faqView</td>
+                                    <td>The page where a user views Frequently Asked Questions</td>
+                                </tr>
+                                <tr>
+                                    <td>AboutView</td>
+                                    <td>The page where a user views information about COVIDaware</td>
+                                </tr>
+                                <tr>
+                                    <td>ProvinceDropdown</td>
+                                    <td>Allows user to switch between various provincial representations of the data</td>
+                                </tr>
+                                <tr>
+                                    <td>Graphs</td>
+                                    <td>A visual representation of data processed from the database</td>
+                                </tr>
+                                <tr>
+                                    <td>Heatmap</td>
+                                    <td>A visual representation of data processed from the database</td>
+                                </tr>
+                                <tr>
+                                    <td>TwitterFeed</td>
+                                    <td>Where a user views the active Twitter News</td>
+                                </tr>
+                                <tr>
+                                    <td>AboutContent</td>
+                                    <td>Text that describes the purpose and goal of COVIDaware</td>
+                                </tr>
+                                <tr>
+                                    <td>TeamContent</td>
+                                    <td>Text that displays all team members</td>
+                                </tr>
+                                <tr>
+                                    <td>FAQContent</td>
+                                    <td>Text that displays all Frequently Asked Questions</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>    </h1>
+                    </div>
+                </div>
+                <div class = "topic">
+                    <div class = "topicHeader">
+                        <a id = "5">
+                            <h2>5. Versions</h2>
+                        </a>
+                    </div>
+                    <div class = "subtopicBody">
+                        <ul>
+                            <li>Version 1.0 - 2021/01/29 (original draft)</li>
+                            <ul>
+                                <li>Ryan Bahia</li>
+                                <li>Ahmar Baig</li>
+                                <li>Kevin Chisholm</li>
+                                <li>Bartosz Grabinski</li>
+                                <li>Alex Hoang</li>
+                                <li>Raman Kala</li>
+                                <li>Maninder Lall</li>
+                                <li>Zach Luloff</li>
+                                <li>Amari Maynard</li>
+                                <li>Kyle Papizewski</li>
+                                <li>Evan Attfield</li>
+                                <li>Lakshmi Pattathe</li>
+                                <li>Asad Asif</li>
+                                <li>Liam Mcleod</li>
+                            </ul>
+                            <li>Version 2.0 - 2021/03/31 </li>
+                            <ul>
+                                <li>Ryan Bahia</li>
+                                <li>Maninder Lall</li>
+                                <table cellspacing = '0'>
+                                    <thead>
+                                        <tr>
+                                            <th colspan = "1">Version 2.0 Changes:</th>
+                                            <th colspan = "1">Contributors:</th>
+                                            <th colspan = "1">Date:</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Fixed inconsistent faqView, and faqContent spelling between diagram, and tables.</td>
+                                            <td>Ryan, Maninder</td>
+                                            <td>2021/03/31</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Added in missing control objects</td>
+                                            <td>Ryan, Maninder</td>
+                                            <td>2021/03/31</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Update class diagram to new diagram, falling in line with David Browns instructions</td>
+                                            <td>Ryan, Maninder</td>
+                                            <td>2021/03/31</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Change 3.1, 3.2 to make consistent with new class diagram</td>
+                                            <td>Ryan, Maninder</td>
+                                            <td>2021/03/31</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Move Appendix A to Bottom</td>
+                                            <td>Ryan, Maninder</td>
+                                            <td>2021/03/31</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Add hyper link to appendix a reference</td>
+                                            <td>Ryan, Maninder</td>
+                                            <td>2021/03/31</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+
+                            </ul>
+                            
+                        </ul>
+                    </div>
+                </div>	
 			</div>
+            
 		</div>
 		<div class = "footer">
 			<div class = "cp">
