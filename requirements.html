@@ -261,7 +261,6 @@
 								<li>Coronaviruses - refers to a large group of viruses, but under the context of COVIDaware, it will be used to refer to COVID-19</li>
 								<li>Heat Map - represents data using colour on a map.</li>
 								<li>Source Database - Represents the database created by the government that will be used for the Team Database.</li>
-								<li>Team Database - Represents the designed database maintained by our team that will utilize its data from the Source Database.</li>
 								<li>View - Refers to which location is displayed on the heat maps and graphs
 									<ul>
 										<li>Ex: Canada, Ontario, Quebec, etc.</li>
@@ -308,9 +307,12 @@
 							</a>
 						</div>
 						<div class = "subtopicBody">
-							<p>	COVIDaware is based on data from publicly available databases within Canada. The major components of this project include SQL to store COVID-19 data 
-								in a database. It will be using python or javascript to manipulate the data to display it in a visually pleasant format for users. In addition, HTML and CSS
-								will be used to create the web application.
+							<p>	COVIDaware is based on data from publicly available databases within Canada. 
+								One major component of our project is the creation of JSON files from government 
+								provided CSV COVID-19 datafiles. In future plans we intend on incorporating a database to store 
+								information from these CSV files ourselves. It will be using python or javascript to manipulate 
+								the data to display it in a visually pleasant format for users. In addition, HTML and CSS will be 
+								used to create the web application.
 							</p>
 							<div class = "subtopic2">
 								<div class = "subtopicHeader2">
@@ -459,7 +461,7 @@
 
 							<li>Source Database</li>
 								<ul>
-									<li>	Update Source Databases: Involves our online source updating their COVID-19 information for our database.
+									<li>	Update Source Databases: Involves our online source updating their COVID-19 information for JSON files.
 									</li>
 								</ul>
 
@@ -560,7 +562,6 @@
 									<li>Pie graph displaying province deaths/recoveries)</li>
 								</ul>
 								<li>Frequently asked questions</li>
-								<li>Color blind friendly</li>
 							</p>
 						</div>
 					</div>
@@ -575,7 +576,7 @@
 								<li>Display heat map</li>
 								<li>Click on each province to retrieve statistics (default shows Canada)</li>
 								<li>News feed of updates that redirect to official government websites</li>
-								<li>Search bar for specific information</li>
+								<li>Search bar for specific information (future implementation)</li>
 								<li>navigation bar</li>
 							</ul>
 						</div>
@@ -635,7 +636,9 @@
 						</div>
 						<div class = "subtopicBody">
 							<ul>
-								<li>Provincial data will be stored and accessed from our database.</li>
+								<li>Provincial data will be stored and accessed from our database in future plans. 
+									However, in the current version of our web application we will pull information directly 
+									from JSON files we created from CSV files.</li>
 							</ul>
 						</div>
 					</div>
@@ -769,6 +772,13 @@
 									<li>Section 1.3 - Added new definitions to Source Database and Team Database</li>
 									<li>Section 2.6 - Changed UML Use diagram and descriptions to align with feedback received from Mr. Brown</li>
 									<li>Grammar and spelling fixes</li>
+								</ul>
+								<li>Version 2.1 - 2021/04/16</li>
+								<ul>
+									<li>Kevin</li>
+									<li>Section 1.3 - Deleted Team Database as it is no longer relevant</li>
+									<li>Section 2.6 - Update Use Case descriptions to match our decision to pull straight from JSON file 
+										instead of storing in database</li>
 								</ul>
 							</ul>
 						</div>
